@@ -1,0 +1,46 @@
+*.py[cod]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib64
+
+# unit test & coverage reports
+cover
+.coverage
+.coverage*
+.tox
+
+# Vagrant info is all strictly local:
+.vagrant
+
+# Mac Specific
+.DS_Store
+*.swp
+.AppleDouble
+.LSOverride
+Icon
+
+._*
+
+.Trashes
+.Spotlight-V100
+
+# code coverage reports
+*.db
+
+# Any logs
+*.log
+*.log.*
+
+# npm ignores
+node_modules
