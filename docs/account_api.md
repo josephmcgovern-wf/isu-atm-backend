@@ -4,7 +4,11 @@
 
 #### Request:
 ```
-/api/account/<int:customer_id>/
+URL: /api/account/<int:customer_id>/
+REQUIRED HEADERS:
+  {
+    "X-Api-ATM-Key": "<session_id>",
+  }
 ```
 
 #### Response:
@@ -28,11 +32,17 @@
 
 #### Request:
 ```
-/api/account/<int:account_id>/transfer/
-{
-  "target_account_id": 1234,
-  "amount": 500
-}
+URL: /api/account/<int:account_id>/transfer/
+REQUIRED HEADERS:
+  {
+    "X-Api-ATM-Key": "<session_id>",
+    "Content-Type": "application/json"
+  }
+REQUIRED JSON BODY:
+  {
+    "target_account_id": 1234,
+    "amount": 500
+  }
 ```
 
 #### Response:
@@ -64,10 +74,16 @@
 
 #### Request:
 ```
-/api/account/<int:account_id>/withdraw/
-{
-  "amount": 500
-}
+URL: /api/account/<int:account_id>/withdraw/
+REQUIRED HEADERS:
+  {
+    "X-Api-ATM-Key": "<session_id>",
+    "Content-Type": "application/json"
+  }
+REQUIRED JSON BODY:
+  {
+    "amount": 500
+  }
 ```
 
 #### Response:
@@ -91,10 +107,16 @@
 
 #### Request:
 ```
-/api/account/<int:account_id>/deposit/
-{
-  "amount": 500
-}
+URL: /api/account/<int:account_id>/deposit/
+REQUIRED HEADERS:
+  {
+    "X-Api-ATM-Key": "<session_id>",
+    "Content-Type": "application/json"
+  }
+REQUIRED JSON BODY:
+  {
+    "amount": 500
+  }
 ```
 
 #### Response:
