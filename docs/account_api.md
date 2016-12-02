@@ -4,6 +4,7 @@
 
 #### Request:
 ```
+GET
 URL: /api/account/<int:customer_id>/
 REQUIRED HEADERS:
   {
@@ -32,6 +33,7 @@ REQUIRED HEADERS:
 
 #### Request:
 ```
+PUT
 URL: /api/account/<int:account_id>/transfer/
 REQUIRED HEADERS:
   {
@@ -74,6 +76,7 @@ REQUIRED JSON BODY:
 
 #### Request:
 ```
+PUT
 URL: /api/account/<int:account_id>/withdraw/
 REQUIRED HEADERS:
   {
@@ -107,6 +110,7 @@ REQUIRED JSON BODY:
 
 #### Request:
 ```
+PUT
 URL: /api/account/<int:account_id>/deposit/
 REQUIRED HEADERS:
   {
