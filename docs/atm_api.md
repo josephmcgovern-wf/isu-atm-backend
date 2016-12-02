@@ -38,6 +38,8 @@ REQUIRED JSON BODY:
 }
 ```
 
+---
+
 ### End ATM session
 
 #### Request:
