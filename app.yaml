@@ -1,4 +1,4 @@
-application: cattle-krush-backend
+application: atm-backend
 version: 1
 runtime: python27
 api_version: 1

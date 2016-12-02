@@ -1,0 +1,8 @@
+indexes:
+
+- kind: Card
+  properties:
+  - name: number
+  - name: security_code
+  - name: bank
+  - name: expiration_date
