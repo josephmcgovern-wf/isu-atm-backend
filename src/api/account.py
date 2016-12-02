@@ -114,7 +114,7 @@ class Deposit(AccountsPUT):
 
 def setup_urls(app):
     app.add_url_rule(
-        '/api/account/<int:customer>/',
+        '/api/account/<int:customer_id>/',
         view_func=Accounts.as_view('accounts')
     )
     app.add_url_rule(
