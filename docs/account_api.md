@@ -22,7 +22,7 @@
 ]
 ```
 
-**
+---
 
 ### Transfer Funds
 
@@ -58,7 +58,7 @@
 }
 ```
 
-**
+---
 
 ### Withdraw Funds
 
@@ -85,7 +85,7 @@
 }
 ```
 
-**
+---
 
 ### Deposit Funds
 
