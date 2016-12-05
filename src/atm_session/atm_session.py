@@ -36,13 +36,12 @@ class ATMSession(ndb.Model):
         session = ATMSession.query(ATMSession.session_id == session_id).get()
         if session:
             try:
-                cls._end_transactionally(session_id)
+                session.end_transactionally()
             except db.TransactionFailedError:
                 raise DuplicateSessionError()
 
-    @classmethod
     @ndb.transactional(retries=0)
-    def _end_transactionally(self):
+    def end_transactionally(self):
         self.key.delete()
 
     @staticmethod
