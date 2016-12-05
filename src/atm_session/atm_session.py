@@ -40,6 +40,7 @@ class ATMSession(ndb.Model):
             except db.TransactionFailedError:
                 raise DuplicateSessionError()
 
+    @classmethod
     @ndb.transactional(retries=0)
     def _end_transactionally(self):
         self.key.delete()
